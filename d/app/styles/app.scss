@@ -1,0 +1,86 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 50px;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: underline;
+  color: #F0AD4E;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #666;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #F0AD4E;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-weight: 600;
+  color: #666;
+  padding-bottom: 6px;
+}
+
+h5 {
+  display: inline-block;
+  font-weight: 600;
+  color: #666;
+}
+
+h5 a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.icon{
+  color: #F0AD4E;
+}
+
+// .form-frame {
+//   float: left;
+//   margin-right: 20px;
+// }
+//
+// .list-frame {
+//   position: relative;
+//   clear: right;
+// }
+
+.list-detail {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 6px;
+}
+
+.tag-list {
+  color: #666;
+  padding-bottom: 5px;
+}

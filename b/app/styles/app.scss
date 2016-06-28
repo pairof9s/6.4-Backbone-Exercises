@@ -1,0 +1,67 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 50px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #5BC0DE;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-weight: 600;
+  color: #666;
+  padding-bottom: 8px;
+}
+
+.app {
+  color: blue;
+}
+
+.input {
+  margin-bottom: 6px;
+  padding-left: 6px;
+  border: none;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  background-color: #fafafa;
+  border-radius: 2px;
+  color: #666;
+  float: right;
+}
+
+.button {
+  margin-top: 6px;
+  float: right;
+}
+
+.form-group label {
+  color: #5BC0DE;
+}
+
+.icon{
+  color: #5BC0DE;
+  margin-bottom: 8px;
+}
