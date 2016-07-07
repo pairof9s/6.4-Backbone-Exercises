@@ -1,5 +1,7 @@
 var $ = require('jquery');
 var Backbone = require('backbone');
+var _ = required('underscore');
+
 var listTemplate = require('../../templates/addresslist.hbs');
 var formTemplate = require('../../templates/addressform.hbs');
 var detailTemplate = require('../../templates/addressdetail.hbs');
@@ -77,13 +79,22 @@ var TagListView = Backbone.View.extend({
   initialize: function(){
     this.listenTo(this.collection, 'add', this.renderTag);
   },
+  tagSelected: function(event){
+    var tags = $('#tag').val('');
+    var models = _.filter(this.collection.models,function(model){
+     return tags.indexOf(model.get('#tag')) >= 0;
+    }),
+    this.collection.reset(models);
+    this.render(models);
+  },
   render: function(){
     return this;
   },
   renderTag: function(tag){
     var tagItem = new TagItemView({model: tag});
     this.$el.append(tagItem.render().el);
-  }
+  },
+
 });
 
 module.exports = {
